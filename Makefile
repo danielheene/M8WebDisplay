@@ -17,8 +17,8 @@ DEPLOY_DIR = deploy/
 NPM = node_modules/
 
 ifeq ($(shell uname -s),Darwin)
-	BASE64 = base64 -i
-	MD5 = md5
+	BASE64 = /usr/bin/base64 -i
+	MD5 = /sbin/md5
 else
 	BASE64 = base64 -w0
 	MD5 = md5sum
